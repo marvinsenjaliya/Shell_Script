@@ -54,5 +54,3 @@ Working_day=20
 Daily_hour=8
 Hour_wage=20
 Month_wage=$((Working_day * Daily_hour * Hour_wage ))
-echo "month_wage=" $Month_wage
-
