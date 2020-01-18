@@ -32,6 +32,7 @@ do
         	Day_Hour=8
         	Daily_Wage=$((Wage_per_hour * Day_Hour))
         	echo "Daily_Wage=" $Daily_Wage
+		break
 		;;
 	2)
 		echo "yes,this half-day employee is not present"
@@ -39,10 +40,19 @@ do
 	        Parttime_hour=8
 	        Parttime_Wage=$((Wage_per_hour * Parttime_hour))
 	        echo "Parttime_Wage=" $Parttime_Wage
+		break
 		;;
 	3)
 		echo "not present"
+		break
 		;;
   esac
 done
+
+echo "calculating wages for month"
+Working_day=20
+Daily_hour=8
+Hour_wage=20
+Month_wage=$((Working_day * Daily_hour * Hour_wage ))
+echo "month_wage=" $Month_wage
 
