@@ -54,6 +54,7 @@ Working_day=20
 Daily_hour=8
 Hour_wage=20
 Month_wage=$((Working_day * Daily_hour * Hour_wage ))
+
 echo "month_wage=" $Month_wage
 
 echo "calculate wages till a condition of total working hours or days is reached for month"
@@ -68,3 +69,4 @@ do
 	echo $wages
 	n=$(( $n + 1 ))
 done 
+
