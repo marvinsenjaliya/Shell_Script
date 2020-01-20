@@ -68,5 +68,14 @@ do
 	wages=$(( working_hour * pay_hour * n))
 	echo $wages
 	n=$(( $n + 1 ))
-done 
-
+done
+echo "function to get work hour"
+echo "add working days" 
+Work_hour() {
+  Daily_hour=8
+  total_hour=$(( Daily_hour * days))
+  echo "total hour is..."
+  echo $total_hour
+}
+read days
+Work_hour $days
